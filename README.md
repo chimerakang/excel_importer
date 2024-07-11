@@ -24,9 +24,9 @@ Import Setup
 
 Create an Excel file, make the first row the name of the column, and enter the data from the second row. And add it to Unity's Project view.
 
-<img width="229" alt="create_excel" src="https://user-images.githubusercontent.com/1071168/34470078-7246b924-ef6d-11e7-8711-acb49ae2c349.png">
+<img width="229" alt="create_excel" src="https://github.com/chimerakang/excel_importer/blob/master/images/image1.png">
 
-<img width="247" alt="import_excel_to_unity" src="https://user-images.githubusercontent.com/1071168/34470091-8bdc1c76-ef6d-11e7-88e5-76c76294a26c.png">
+<img width="247" alt="import_excel_to_unity" src="https://github.com/chimerakang/excel_importer/blob/master/images/image5.png">
 
 ### 2. Create Entity Class Script
 
@@ -37,21 +37,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class MstItemEntity
+[Serializable]
+public class LocalizationEntity
 {
 	public int id;
 	public string name;
-	public int price; 
+	public int price;
+	public bool isNotForSale;
+	public float rate;
+	public string scene;
+	public string en;
+	public string tw;
+	public string cn;
+	public string jp;
+	public string kr;
+	public LocalizationCategory category;
 }
-
 ```
 
 ### 3. Create Excel Asset Script 
 
 After selecting Excel, execute ExcelAssetScript from the Create menu and create a ScriptableObject script for Excel.
 
-<img width="527" alt="create_excel_asset" src="https://user-images.githubusercontent.com/1071168/34470096-abdadd0a-ef6d-11e7-9bf6-e9458c660264.png">
+<img width="527" alt="create_excel_asset" src="https://github.com/chimerakang/excel_importer/blob/master/images/image2.png">
 
 As for the generated script, the Excel file name and the sheet name are extracted and the part is commented out as below.
 
@@ -62,9 +70,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExcelAsset]
-public class MstItems : ScriptableObject
+public class SceneLocalization : ScriptableObject
 {
-	//public List<EntityType> Entities; // Replace 'EntityType' to an actual type that is serializable.
+	// Replace 'EntityType' to an actual type that is serializable.
+	// Replace 'EntityType' to an actual type that is serializable.
 }
 ```
 
@@ -79,9 +88,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExcelAsset]
-public class MstItems : ScriptableObject
+public class SceneLocalization : ScriptableObject
 {
-	public List<MstItemEntity> Entities;
+	public List<LocalizationEntity> Scene1; 
+	public List<LocalizationEntity> Scene2; 
 }
 ```
 
@@ -89,9 +99,9 @@ public class MstItems : ScriptableObject
 
 When you import or re-save Excel, a ScriptableObject with the same name as Excel is created in the same directory and the contents of Excel are imported.
 
-<img width="321" alt="reimport_excel" src="https://user-images.githubusercontent.com/1071168/34470099-c21db84e-ef6d-11e7-954f-cc5c96c382bd.png">
+<img width="321" alt="reimport_excel" src="https://github.com/chimerakang/excel_importer/blob/master/images/image3.png">
 
-<img width="570" alt="imported_entities" src="https://user-images.githubusercontent.com/1071168/34470102-cde2bcc4-ef6d-11e7-8083-a661b82ae707.png">
+<img width="570" alt="imported_entities" src="https://github.com/chimerakang/excel_importer/blob/master/images/image4.png">
 
 After this setting, updating Excel automatically updates ScriptableObject as well.
 
@@ -113,10 +123,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExcelAsset(AssetPath = "Resources/MasterData")]
-public class MstItems : ScriptableObject
+public class SceneLocalization : ScriptableObject
 {
-	public List<MstItemEntity> Entities;
-}
 ```
 
 ### Use Enum
@@ -131,7 +139,7 @@ When true is specified for LogOnImport of ExcelAssetAttribute, a log is output w
 ```cs
 ...
 [ExcelAsset(LogOnImport = true)]
-public class MstItems : ScriptableObject
+public class SceneLocalization : ScriptableObject
 {
 ...
 ```
@@ -142,14 +150,9 @@ You can change the association to a specific Excel file by specifying ExcelName 
 
 ```cs
 ...
-[ExcelAsset(ExcelName = "MstItemData")]
-public class MstItems : ScriptableObject
+[ExcelAsset(ExcelName = "SceneLocalizationData")]
+public class SceneLocalization : ScriptableObject
 {
 ...
 ```
 
-License
-----------
-
-This library is under the MIT License.
-This software includes the work that is distributed in the Apache License 2.0.
