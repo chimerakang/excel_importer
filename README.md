@@ -124,11 +124,9 @@ It is also useful to set Data Validation pull down as an element of enum in Exce
 When true is specified for LogOnImport of ExcelAssetAttribute, a log is output when the import process runs.
 
 ```cs
-...
 [ExcelAsset(LogOnImport = true)]
 public class SceneLocalization : ScriptableObject
 {
-...
 ```
 
 ### Changing name association between ExcelAsset and ExcelFile
@@ -136,10 +134,8 @@ public class SceneLocalization : ScriptableObject
 You can change the association to a specific Excel file by specifying ExcelName of ExcelAssetAttribute, 
 
 ```cs
-...
 [ExcelAsset(ExcelName = "SceneLocalizationData")]
 public class SceneLocalization : ScriptableObject
 {
-...
 ```
 
