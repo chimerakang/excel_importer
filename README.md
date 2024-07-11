@@ -4,19 +4,6 @@ Unity Excel Importer
 Extension for auto import data from xls, xlsx to custom ScriptableObject in Unity Editor.
 
 
-### Package Manager
-
-Add the following entry to Packages/manifest.json or Package Manager.
-
-```json
-{
-  "dependencies": {
-    "net.mikinya.unity-excel-importer": "https://github.com/mikito/unity-excel-importer.git?path=Assets/ExcelImporter#v0.1.1/upm",
-    ...
-  }
-}
-```
-
 Import Setup
 --------
 
