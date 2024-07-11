@@ -24,7 +24,8 @@ public class ExcelImporter : AssetPostprocessor
 		}
 	}
 
-	static List<ExcelAssetInfo> cachedInfos = null; // Clear on compile.
+	// Clear on compile.
+	static List<ExcelAssetInfo> cachedInfos = null; 
 
 	static void OnPostprocessAllAssets (string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
 	{

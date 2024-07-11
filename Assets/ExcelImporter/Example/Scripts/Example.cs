@@ -6,7 +6,7 @@ using System.Linq;
 
 public class Example : MonoBehaviour
 {
-	[SerializeField] MstItems mstItems;
+	[SerializeField] SceneLocalization localizationItems;
 	[SerializeField] Text text;
 
 	void Start()
@@ -18,22 +18,29 @@ public class Example : MonoBehaviour
 	{
 		string str = "";
 
-		mstItems.Entities
+		localizationItems.Scene1
+			.ForEach(entity => str += DescribeMstItemEntity(entity) + "\n");
+
+		localizationItems.Scene2
 			.ForEach(entity => str += DescribeMstItemEntity(entity) + "\n");
 
 		text.text = str;
 	}
 
-	string DescribeMstItemEntity(MstItemEntity entity)
+	string DescribeMstItemEntity(LocalizationEntity entity)
 	{
 		return string.Format(
-			"{0} : {1}, {2}, {3}, {4}, {5}",
+			"{0} : {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}",
 			entity.id,
 			entity.name,
 			entity.price,
 			entity.isNotForSale,
 			entity.rate,
-			entity.category
+			entity.scene,
+			entity.en,
+			entity.cn,
+			entity.jp,
+			entity.kr
 		);
 	}
 }

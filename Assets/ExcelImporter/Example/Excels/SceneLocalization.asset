@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36db86c9add4c24c90da6383eb532b6, type: 3}
+  m_Name: SceneLocalization
+  m_EditorClassIdentifier: 
+  Scene1:
+  - id: 1
+    name: name1
+    price: 1
+    isNotForSale: 1
+    rate: 1
+    scene: scene1
+    en: What are we eating today1
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC1"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E481"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B1"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6941?"
+    category: 0
+  - id: 2
+    name: name2
+    price: 2
+    isNotForSale: 1
+    rate: 2
+    scene: scene1
+    en: What are we eating today2
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC2"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E482"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B2"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6942?"
+    category: 0
+  - id: 3
+    name: name3
+    price: 3
+    isNotForSale: 0
+    rate: 33.2
+    scene: scene1
+    en: What are we eating today3
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC3"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E483"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B3"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6943?"
+    category: 0
+  - id: 4
+    name: ccc1
+    price: 4
+    isNotForSale: 1
+    rate: 43
+    scene: scene1
+    en: What are we eating today4
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC4"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E484"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B4"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6944?"
+    category: 0
+  - id: 5
+    name: ccc2
+    price: 5
+    isNotForSale: 1
+    rate: 0.3
+    scene: scene1
+    en: What are we eating today5
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC5"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E485"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B5"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6945?"
+    category: 0
+  - id: 6
+    name: ccc3
+    price: 4
+    isNotForSale: 0
+    rate: 0.5
+    scene: scene1
+    en: What are we eating today6
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC6"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E486"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B6"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6946?"
+    category: 0
+  - id: 7
+    name: bob1
+    price: 4
+    isNotForSale: 1
+    rate: 0.99
+    scene: scene1
+    en: What are we eating today7
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC7"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E487"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B7"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6947?"
+    category: 0
+  - id: 8
+    name: bob2
+    price: 6
+    isNotForSale: 1
+    rate: 1.8
+    scene: scene1
+    en: What are we eating today8
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC8"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E488"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B8"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6948?"
+    category: 0
+  - id: 9
+    name: bob3
+    price: 55
+    isNotForSale: 0
+    rate: 9
+    scene: scene1
+    en: What are we eating today9
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC9"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E489"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B9"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6949?"
+    category: 0
+  - id: 10
+    name: john
+    price: 123304
+    isNotForSale: 1
+    rate: 2.03
+    scene: scene1
+    en: What are we eating today10
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC10"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E4810"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B10"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC69410?"
+    category: 0
+  Scene2:
+  - id: 1
+    name: name1
+    price: 1
+    isNotForSale: 1
+    rate: 1
+    scene: scene2
+    en: What are we eating today1
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC1"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E481"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B1"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6941?"
+    category: 0
+  - id: 2
+    name: name2
+    price: 2
+    isNotForSale: 1
+    rate: 2
+    scene: scene2
+    en: What are we eating today2
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC2"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E482"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B2"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6942?"
+    category: 0
+  - id: 3
+    name: name3
+    price: 3
+    isNotForSale: 0
+    rate: 33.2
+    scene: scene2
+    en: What are we eating today3
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC3"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E483"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B3"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6943?"
+    category: 0
+  - id: 4
+    name: ccc1
+    price: 4
+    isNotForSale: 1
+    rate: 43
+    scene: scene2
+    en: What are we eating today4
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC4"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E484"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B4"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6944?"
+    category: 0
+  - id: 5
+    name: ccc2
+    price: 5
+    isNotForSale: 1
+    rate: 0.3
+    scene: scene2
+    en: What are we eating today5
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC5"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E485"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B5"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6945?"
+    category: 0
+  - id: 6
+    name: ccc3
+    price: 4
+    isNotForSale: 0
+    rate: 0.5
+    scene: scene2
+    en: What are we eating today6
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC6"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E486"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B6"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6946?"
+    category: 0
+  - id: 7
+    name: bob1
+    price: 4
+    isNotForSale: 1
+    rate: 0.99
+    scene: scene2
+    en: What are we eating today7
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC7"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E487"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B7"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6947?"
+    category: 0
+  - id: 8
+    name: bob2
+    price: 6
+    isNotForSale: 1
+    rate: 1.8
+    scene: scene2
+    en: What are we eating today8
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC8"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E488"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B8"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6948?"
+    category: 0
+  - id: 9
+    name: bob3
+    price: 55
+    isNotForSale: 0
+    rate: 9
+    scene: scene2
+    en: What are we eating today9
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC9"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E489"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B9"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC6949?"
+    category: 0
+  - id: 10
+    name: john
+    price: 123304
+    isNotForSale: 1
+    rate: 2.03
+    scene: scene2
+    en: What are we eating today10
+    tw: "\u4ECA\u5929\u5403\u751A\u9EBC10"
+    cn: "\u4ECA\u5929\u5403\u4EC0\u4E4810"
+    jp: "\u4ECA\u65E5\u306F\u4F55\u3092\u98DF\u3079\u307E\u3059\u304B10"
+    kr: "\uC624\uB298 \uC6B0\uB9AC\uB294 \uBB34\uC5C7\uC744 \uBA39\uB098\uC69410?"
+    category: 0
